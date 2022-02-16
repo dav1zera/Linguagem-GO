@@ -1,11 +1,14 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	for i := 0; i <= 100; i += 10 {
-		fmt.Println(i)
+
+	n1 := 100
+
+	if n1 == 100 {
+		n1++
+	} else {
+		fmt.Println(n1)
 	}
 }
