@@ -14,6 +14,9 @@ func main() {
 	var nomes = [4]string{"Davi", "Alves", "Dos", "Santos"}
 	var dinos = [...]string{"Rex", "Spino", "Oviraptor"}
 	var times = [...]string{"Barcelona", "Real Madrid", "Ajax"}
+	var jogadores = [...]string{"Messi", "Ronaldo", "Pelé", "Cruyff", "Maradona"}
+
+	fmt.Println(jogadores)
 
 	fmt.Println(len(ints))
 	fmt.Println(len(nomes))
