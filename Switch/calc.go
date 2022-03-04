@@ -7,21 +7,20 @@ func main() {
 	var n1, n2, res float64
 	var menu int
 
-	escolha := false
+	println("1-Soma 2-Sub 3-Div 4-Multi")
+	fmt.Scan(&menu)
 
-	for i := 0; i < 0; i++ {
-
-		println("1-Soma 2-Sub 3-Div 4-Multi")
-		fmt.Scan(&menu)
+	for menu > 0 {
 
 		switch menu {
+
 		case 1:
 			fmt.Println("Digite o primeiro número: ")
 			fmt.Scan(&n1)
 			fmt.Println("Digite o segundo número: ")
 			fmt.Scan(&n2)
 			res = n1 + n2
-			fmt.Printf("A soma é: %.2f ", res)
+			fmt.Printf("A soma é: %.2f\n", res)
 			break
 
 		case 2:
@@ -30,7 +29,7 @@ func main() {
 			fmt.Println("Digite o segundo número: ")
 			fmt.Scan(&n2)
 			res = n1 - n2
-			fmt.Printf("A sub é: %.2f ", res)
+			fmt.Printf("A sub é: %.2f\n", res)
 			break
 
 		case 3:
@@ -39,7 +38,7 @@ func main() {
 			fmt.Println("Digite o segundo número: ")
 			fmt.Scan(&n2)
 			res = n1 / n2
-			fmt.Printf("A div é: %.2f ", res)
+			fmt.Printf("A div é: %.2f\n", res)
 			break
 
 		case 4:
@@ -48,16 +47,11 @@ func main() {
 			fmt.Println("Digite o segundo número: ")
 			fmt.Scan(&n2)
 			res = n1 * n2
-			fmt.Printf("A multi é: %.2f ", res)
+			fmt.Printf("A multi é: %.2f\n", res)
 			break
 
-		default:
-			println("Escolha incorreta")
-
 		}
 
-		if !escolha {
-			fmt.Println("Saiu")
-		}
 	}
+
 }
