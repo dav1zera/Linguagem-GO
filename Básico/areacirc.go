@@ -14,8 +14,8 @@ func main() {
 
 	var area float64
 	var number1 float64
-	fmt.Println("Digite o número: ")
-	fmt.Scanf("%f", &number1)
+
+	fmt.Scanf("%f\n", &number1)
 
 	area = areaCirc(number1)
 
