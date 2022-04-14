@@ -11,24 +11,24 @@ func main() {
 	var N int64
 
 	var soma int64 = 0
-	var counter int64 = 1
+	var contador int64 = 1
 
-	for counter != 0 {
+	for contador != 0 {
 
 		fmt.Scanf("%d %d", &M, &N)
 
 		if M > N {
-			O := M
+			aux := M
 			M = N
-			N = O
+			N = aux
 
 		}
 
 		if M <= 0 || N <= 0 {
-			counter--
+			contador--
 		}
 
-		if counter != 0 {
+		if contador != 0 {
 			soma = 0
 			for i = M; i <= N; i++ {
 
